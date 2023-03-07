@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const PORT = 3000
 
-
-app.listen(3030,() => {
-    console.log("Servido levantando en puerto 3030");
+app.listen(PORT,() => {
+    console.log(`servidor levantado en puerto: http://localhost:${PORT}`);
 })
 
 app.use(express.static(path.join(__dirname,"DH-Heroes","public")))
